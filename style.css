@@ -1,3 +1,6 @@
+/* =======================
+========default styles */
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -14,20 +17,43 @@ body {
 }
 
 .img-container {
-  height: 180px;
-  width: 100px;
+  max-height: 300px;
+}
+
+/* ==============
+=========typography */
+
+h2 {
+  font-family: "Baskervville SC", serif, system-ui;
 }
 
 main {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .card-container {
-  border: solid 1px black;
   background-color: dimgray;
   color: #ececec;
   display: flex;
   max-width: 500px;
+  border-radius: 5px;
+}
+
+.details-container {
+  padding: 30px;
+}
+
+.card-details {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+  margin-block: 20px;
+}
+
+.label,
+.occupation {
+  color: red;
 }
